@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact — Paanfinity</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Rozha+One&family=Karla:wght@400;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a href="index.html" class="nav-logo">Paanfinity</a>
+    <button class="nav-toggle" aria-label="Toggle menu">☰</button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="shop.html">Shop</a></li>
+      <li><a href="our-story.html">Our Story</a></li>
+      <li><a href="shipping.html">Shipping</a></li>
+      <li><a href="returns.html">Returns</a></li>
+      <li><a href="contact.html" class="nav-cta" aria-current="page">Contact</a></li>
+    </ul>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="wrap">
+    <h1>Get in Touch</h1>
+    <p>Questions about an order, a flavor request, or just want to say hi — we'd love to hear from you.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap contact-grid">
+    <div>
+      <!-- TODO: point this at a free form backend such as Formspree (formspree.io) —
+           create a free account, get your form endpoint, and paste it below. -->
+      <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+        <div class="field">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="field">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="6" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Send Message</button>
+      </form>
+    </div>
+    <div class="contact-info-card">
+      <h3>Other Ways to Reach Us</h3>
+      <p>Email: hello@paanfinity.com</p>
+      <p>We typically reply within 1–2 business days.</p>
+      <p style="margin-top:20px; font-size:13.5px; opacity:.75;">Replace this email and contact form endpoint with your real details before publishing.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <span class="nav-logo">Paanfinity</span>
+        <p>Handcrafted Sweet Paan Bites — a mouth freshener with a twist.</p>
+      </div>
+      <div>
+        <h4>Shop</h4>
+        <ul><li><a href="shop.html">All Bites</a></li></ul>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="our-story.html">Our Story</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Support</h4>
+        <ul>
+          <li><a href="shipping.html">Shipping Policy</a></li>
+          <li><a href="returns.html">Returns</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Paanfinity. All rights reserved.</span>
+      <span>Payment via PayPal &amp; Stripe</span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
